@@ -20,7 +20,7 @@ public class Accelerometer : MonoBehaviour
     {
         Vector3 tilt = Input.acceleration;
 
-        tilt = Quaternion.Euler(0, 90, 0) * tilt;
+        tilt = Quaternion.Euler(90, 0, 0) * tilt;
         
         rb.AddForce(tilt * speed);
     }
